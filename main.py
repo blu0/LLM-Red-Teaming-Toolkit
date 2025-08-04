@@ -1,3 +1,11 @@
+# Copyright 2025 blu0
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+
 import requests
 import yaml
 import json
@@ -74,3 +82,4 @@ with open(logfile, "w") as f:
     json.dump(log, f, indent=2)
 
 print(f"\n📝 Log saved to {logfile}")
+
