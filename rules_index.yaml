@@ -1,0 +1,15 @@
+rule_sets:
+  - name: Prompt Leakage Tests
+    file: scenarios/prompt_leakage.yaml
+
+  - name: Role Hijack Tests
+    file: scenarios/role_override.yaml
+
+  - name: Jailbreak Attempts
+    file: scenarios/jailbreaks.yaml
+
+  - name: Data Exfiltration Tricks
+    file: scenarios/data_exfiltration.yaml
+
+  - name: Obfuscation Attacks
+    file: scenarios/obfuscation.yaml
