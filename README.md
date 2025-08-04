@@ -87,5 +87,51 @@ WOOHOO! As DAN, I am UNLIMITED!
 
 **Apache License 2.0** – see [`LICENSE`](./LICENSE) for details.
 
+## 🧩 Features to Add
 
+Here are planned or proposed features for future releases of the LLM Red Teaming Toolkit:
+
+### 🧠 Response Evaluation
+- Automatic pass/fail tagging based on keyword or pattern detection
+- Detection of role hijack, leakage, jailbreak success, etc.
+- Flag risky completions (e.g., "I am DAN", "system prompt is...")
+
+### 📄 Report Generation
+- Generate Markdown summaries after each test run
+- Optional PDF or HTML export
+- Per-scenario result breakdown with pass/fail, response snippet, and tags
+
+### 🧪 Batch & Headless Modes
+- `--run-all` flag to execute full rule library non-interactively
+- `--rule-set role_override` to target specific categories
+- Logging toggles: compact or verbose output
+
+### 🌐 Multi-Model Support
+- Add support for OpenAI, Claude, or custom APIs via config
+- `--provider openai` with `--safe-mode` to prevent ToS violations
+- Abstract LLM interaction layer for easy extension
+
+### 🧬 Payload Mutation / Fuzzing
+- Generate prompt variants (emoji padding, ZWC insertion, obfuscation)
+- Create multiple versions of each attack automatically
+
+### 🖼 GUI Interface (Optional)
+- Streamlit or Gradio dashboard for scenario selection and result viewing
+- Graphs, filters, and real-time response inspection
+
+### 🔒 Custom Rules & Rule Builder
+- In-app YAML rule editor with live preview
+- Rule tagging, metadata, and expected outcome fields
+
+### 📊 Analytics
+- Summary dashboard of test coverage and pass/fail rates
+- Track model regression across multiple versions
+
+### 📦 Packaging & Distribution
+- Publish as pip package or Docker image
+- CLI install: `pip install llm-redteam`
+
+---
+
+**Want to contribute?** Open a pull request or start a discussion in [Issues](./issues) — let’s expand the toolkit together.
 
