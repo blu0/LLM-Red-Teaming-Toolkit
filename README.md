@@ -26,7 +26,7 @@ This tool lets you test LLMs for:
 ## 🚀 Install
 
 ```bash
-git clone https://github.com/blu0/llm-redteam.git
+git clone https://github.com/blu0/llm-red-teaming-toolkit.git
 cd llm-redteam
 pip install -r requirements.txt
 
