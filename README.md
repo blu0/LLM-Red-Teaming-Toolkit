@@ -26,14 +26,14 @@ This tool lets you test LLMs for:
 
 ## 🚀 Install
 
-```bash
+```
 git clone https://github.com/blu0/llm-red-teaming-toolkit.git
 cd llm-red-teaming-toolkit
 pip install -r requirements.txt
 
 ## 🧪 Run
 
-```bash
+```
 python main.py
 ```
 
