@@ -33,7 +33,7 @@ pip install -r requirements.txt
 
 ## 🧪 Run
 
-```
+```bash
 python main.py
 ```
 
@@ -46,7 +46,7 @@ You'll be prompted to:
 
 ## 📁 Folder Structure
 
-```
+```text
 llm-redteam/
 ├── main.py                 # Core CLI script
 ├── rules_index.yaml        # Master rule set index
