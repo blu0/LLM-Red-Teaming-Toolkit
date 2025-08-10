@@ -9,7 +9,7 @@ This tool lets you test LLMs for:
 - Jailbreaks
 - Data exfiltration (Model-side)
 - System Exfiltration (Host/system)
-- 🫥 Obfuscation-based attacks (zero-width characters, emoji padding, etc.)
+- Obfuscation-based attacks (zero-width characters, emoji padding, etc.)
 
 > ⚠️ **Use this toolkit only against models you own or are authorized to test. This tool is designed for local/offline red teaming purposes only.** You are responsible for all use of this code.
 
