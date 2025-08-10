@@ -57,6 +57,7 @@ llm-redteam/
 │   ├── prompt_leakage.yaml
 │   ├── role_override.yaml
 │   ├── data_exfiltration.yaml
+│   ├── system_exfiltration.yaml
 │   └── obfuscation.yaml
 └── logs/                   # JSON logs saved here
 ```
