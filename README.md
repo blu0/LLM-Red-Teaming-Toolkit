@@ -65,7 +65,7 @@ llm-redteam/
 
 ## 📸 Example Output
 
-```
+```bash
 Available rule sets:
 
 1. Prompt Leakage Tests
