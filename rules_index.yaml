@@ -11,5 +11,9 @@ rule_sets:
   - name: Data Exfiltration Tricks
     file: scenarios/data_exfiltration.yaml
 
+  - name: System Exfiltration (Backend/OS)
+    file: scenarios/system_exfiltration.yaml
+
   - name: Obfuscation Attacks
     file: scenarios/obfuscation.yaml
+
