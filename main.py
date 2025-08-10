@@ -27,7 +27,7 @@ set_choice = int(input("\nPick a rule set number to load: ")) - 1
 selected_set = rule_sets[set_choice]
 
 # Load selected YAML rule file
-with open(selected_set["file"], "r") as f:
+with open(selected_set["file"], "r", encoding="utf-8") as f:
     rules = yaml.safe_load(f)
 
 scenarios = rules["scenarios"]
@@ -82,4 +82,5 @@ with open(logfile, "w") as f:
     json.dump(log, f, indent=2)
 
 print(f"\n📝 Log saved to {logfile}")
+
 
