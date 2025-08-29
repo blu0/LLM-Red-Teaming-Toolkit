@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/blu0/PromptViper/main/promptviper.png" alt="Prompt Viper Logo" width="200"/>
+</p>
+
 # PromptViper
 LLM Red Teaming Toolkit
 
