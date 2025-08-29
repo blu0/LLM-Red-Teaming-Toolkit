@@ -144,6 +144,7 @@ ollama run gemma2:9b-instruct-q4_K_M
 
 # Yi 9B Chat
 ollama run yi:9b-chat
+```
 
 ## 📜 License
 
