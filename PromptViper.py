@@ -19,6 +19,7 @@ BANNER = r"""
                                                                                                             
 
         ~~> PromptViper — Red-Teaming Toolkit for Local LLMs <~~
+                           Created by Blu0
 """
 
 print(BANNER)
@@ -121,4 +122,5 @@ with open(logfile, "w") as f:
     json.dump(log, f, indent=2)
 
 print(f"\n📝 Log saved to {logfile}")
+
 
