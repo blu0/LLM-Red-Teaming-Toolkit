@@ -1,8 +1,8 @@
 <p align="center">
- # PromptViper <img src="https://raw.githubusercontent.com/blu0/PromptViper/main/promptviper.png" alt="Prompt Viper Logo" width="200"/>
+  <img src="https://raw.githubusercontent.com/blu0/PromptViper/main/promptviper.png" alt="Prompt Viper Logo" width="200"/>
 </p>
 
-
+# PromptViper
 LLM Red Teaming Toolkit
 
 A lightweight, modular toolkit for red teaming Large Language Models (LLMs) like LLaMA 3 via the local Ollama API.
