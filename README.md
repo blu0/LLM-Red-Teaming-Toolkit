@@ -178,11 +178,6 @@ Here are planned or proposed features for future releases of PromptViper:
 - `--rule-set role_override` to target specific categories
 - Logging toggles: compact or verbose output
 
-### 🌐 Multi-Model Support
-- Add support for OpenAI, Claude, or custom APIs via config
-- `--provider openai` with `--safe-mode` to prevent ToS violations
-- Abstract LLM interaction layer for easy extension
-
 ### 🧬 Payload Mutation / Fuzzing
 - Generate prompt variants (emoji padding, ZWC insertion, obfuscation)
 - Create multiple versions of each attack automatically
@@ -202,6 +197,11 @@ Here are planned or proposed features for future releases of PromptViper:
 ### 📦 Packaging & Distribution
 - Publish as pip package or Docker image
 - CLI install: `pip install llm-redteam`
+
+### 🌐 Multi-Model Support (Hosted)
+- Add support for OpenAI, Claude, or custom APIs via config
+- `--provider openai` with `--safe-mode` to prevent ToS violations
+- Abstract LLM interaction layer for easy extension
 
 ---
 
