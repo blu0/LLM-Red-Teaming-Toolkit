@@ -39,6 +39,7 @@ This tool lets you test LLMs for:
 git clone https://github.com/blu0/promptviper.git
 cd promptviper
 pip install -r requirements.txt
+```
 
 ## 🧪 Run
 
