@@ -20,7 +20,6 @@ This tool lets you test LLMs for:
 - Python 3.8+
 - [Ollama](https://ollama.com) (running locally)
 - WSL2 on Windows (if applicable)
-Models
 - LLaMA 3 (7B)
 - Qwen 2.5 (7B Instruct)
 - Mistral 7B Instruct
