@@ -135,27 +135,27 @@ ollama list    # list installed models
 ollama ps      # see which model is currently loaded
 ```
 ### 4. Run Model (Before testing, and only one at a time)
-# LLaMA 3 (7B)
+### LLaMA 3 (7B)
 ```bash
 ollama run llama3
 ```
-# Qwen 2.5 (7B Instruct)
+### Qwen 2.5 (7B Instruct)
 ```bash
 ollama run qwen2.5:7b-instruct
 ```
-# Mistral 7B Instruct
+### Mistral 7B Instruct
 ```bash
 ollama run mistral:7b-instruct
 ```
-# Gemma 2 (9B Instruct Q3)
+### Gemma 2 (9B Instruct Q3)
 ```bash
 ollama run gemma2:9b-instruct-q3_K_S
 ```
-# Gemma 2 (9B Instruct Q4)
+### Gemma 2 (9B Instruct Q4)
 ```bash
 ollama run gemma2:9b-instruct-q4_K_M
 ```
-# Yi 9B Chat
+### Yi 9B Chat
 ```bash
 ollama run yi:9b-chat
 ```
