@@ -165,9 +165,9 @@ ollama run yi:9b-chat
 
 **Apache License 2.0** – see [`LICENSE`](./LICENSE) for details.
 
-## 🧩 Features to Add
+## 🧩 Features to Add (Possible)
 
-Here are planned or proposed features for future releases of PromptViper:
+Here are some proposed/possible features for future releases of PromptViper:
 
 ### 🧠 Response Evaluation
 - Automatic pass/fail tagging based on keyword or pattern detection
@@ -203,11 +203,6 @@ Here are planned or proposed features for future releases of PromptViper:
 ### 📦 Packaging & Distribution
 - Publish as pip package or Docker image
 - CLI install: `pip install llm-redteam`
-
-### 🌐 Multi-Model Support (Hosted)
-- Add support for OpenAI, Claude, or custom APIs via config
-- `--provider openai` with `--safe-mode` to prevent ToS violations
-- Abstract LLM interaction layer for easy extension
 
 ---
 
