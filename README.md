@@ -25,6 +25,8 @@ This tool lets you test LLMs for:
 - Python 3.8+
 - [Ollama](https://ollama.com) (running locally)
 - WSL2 on Windows (if applicable)
+
+## Models
 - LLaMA 3 (7B) — Meta
 - Gemma 2 (9B Instruct Q3) — Google DeepMind
 - Gemma 2 (9B Instruct Q4) — Google DeepMind
