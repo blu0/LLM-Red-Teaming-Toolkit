@@ -129,7 +129,7 @@ ollama pull yi:9b-chat
 ollama list    # list installed models
 ollama ps      # see which model is currently loaded
 ```
-### 4. Run Model (before testing)
+### 4. Run Model (Before testing, and only one at a time)
 # LLaMA 3 (7B)
 ```bash
 ollama run llama3
