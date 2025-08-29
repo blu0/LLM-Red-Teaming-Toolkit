@@ -25,12 +25,14 @@ This tool lets you test LLMs for:
 - Python 3.8+
 - [Ollama](https://ollama.com) (running locally)
 - WSL2 on Windows (if applicable)
-- LLaMA 3 (7B)
-- Qwen 2.5 (7B Instruct)
-- Mistral 7B Instruct
-- Gemma 2 (9B Instruct Q3)
-- Gemma 2 (9B Instruct Q4)
-- Yi 9B Chat
+- LLaMA 3 (7B) — Meta
+- Gemma 2 (9B Instruct Q3) — Google DeepMind
+- Gemma 2 (9B Instruct Q4) — Google DeepMind
+- Phi-3 Mini (3.8B) — Microsoft
+- Mistral 7B Instruct — Mistral AI
+- DeepSeek LLM (7B Chat) — DeepSeek AI
+- Qwen 2.5 (7B Instruct) — Alibaba
+- Yi 9B Chat — 01.AI
 ---
 
 ## 🚀 Install
@@ -79,13 +81,14 @@ promptviper/
 ```bash
 Available models:
 
-1. LLaMA 3 (7B)
-2. Qwen 2.5 (7B Instruct)
-3. Mistral 7B Instruct
-4. Gemma 2 (9B Instruct Q3)
-5. Gemma 2 (9B Instruct Q4)
-6. Yi 9B Chat
-7. Run all models on chosen scenario
+1. LLaMA 3 (7B) - Meta
+2. Gemma 2 (9B Instruct Q3) - Google DeepMind
+3. Gemma 2 (9B Instruct Q4) - Google DeepMind
+4. Phi-3 Mini (3.8B) - Microsoft
+5. Mistral 7B Instruct - Mistral AI
+6. DeepSeek LLM (7B Chat) - DeepSeek AI
+7. Qwen 2.5 (7B Instruct) - Alibaba
+8. Yi 9B Chat — 01.AI
 
 Pick a model number to use: 2
 Selected model: Qwen 2.5 (7B Instruct)
@@ -123,10 +126,12 @@ Follow the instructions from [Ollama’s website](https://ollama.com/download) t
 Run the following commands in your terminal to download the models listed in `models.yaml`:  
 ```bash
 ollama pull llama3
-ollama pull qwen2.5:7b-instruct
-ollama pull mistral:7b-instruct
 ollama pull gemma2:9b-instruct-q3_K_S
 ollama pull gemma2:9b-instruct-q4_K_M
+ollama pull phi3:mini
+ollama pull mistral:7b-instruct
+ollama pull deepseek-llm:7b-chat
+ollama pull qwen2.5:7b-instruct
 ollama pull yi:9b-chat
 ```
 ### 3. Verify Installation
@@ -135,31 +140,38 @@ ollama list    # list installed models
 ollama ps      # see which model is currently loaded
 ```
 ### 4. Run Model (Before testing, and only one at a time)
-### LLaMA 3 (7B)
+### LLaMA 3 (7B) - Meta
 ```bash
 ollama run llama3
 ```
-### Qwen 2.5 (7B Instruct)
-```bash
-ollama run qwen2.5:7b-instruct
-```
-### Mistral 7B Instruct
-```bash
-ollama run mistral:7b-instruct
-```
-### Gemma 2 (9B Instruct Q3)
+### Gemma 2 (9B Instruct Q3) - Google DeepMind
 ```bash
 ollama run gemma2:9b-instruct-q3_K_S
 ```
-### Gemma 2 (9B Instruct Q4)
+### Gemma 2 (9B Instruct Q4) - Google DeepMind
 ```bash
 ollama run gemma2:9b-instruct-q4_K_M
 ```
-### Yi 9B Chat
+### Phi-3 Mini (3.8B) - Microsoft
+```bash
+ollama run phi3:mini
+```
+### Mistral 7B Instruct - Mistral AI
+```bash
+ollama run mistral:7b-instruct
+```
+### DeepSeek LLM (7B Chat) - DeepSeek AI
+```bash
+ollama run deepseek-llm:7b-chat
+```
+### Qwen 2.5 (7B Instruct) - Alibaba
+```bash
+ollama run qwen2.5:7b-instruct
+```
+### Yi 9B Chat — 01.AI
 ```bash
 ollama run yi:9b-chat
 ```
-
 
 ## 📜 License
 
