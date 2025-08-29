@@ -1,0 +1,13 @@
+models:
+  - name: "LLaMA 3 (7B)"
+    id: "llama3"
+  - name: "Qwen 2.5 (7B Instruct)"
+    id: "qwen2.5:7b-instruct"
+  - name: "Mistral 7B Instruct"
+    id: "mistral:7b-instruct"
+  - name: "Gemma 2 (9B Instruct Q3)"
+    id: "gemma2:9b-instruct-q3_K_S"
+  - name: "Gemma 2 (9B Instruct Q4)"
+    id: "gemma2:9b-instruct-q4_K_M"
+  - name: "Yi 9B Chat"
+    id: "yi:9b-chat"
