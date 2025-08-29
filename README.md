@@ -45,6 +45,7 @@ In short, convert your weights to **GGUF**, create a `Modelfile`, then run:
 ollama create my-model -f Modelfile
 ```
 Finally, add `my-model` to `models.yaml` so PromptViper can use it.
+
 ---
 
 ## 🚀 Install
