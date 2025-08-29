@@ -121,6 +121,7 @@ else:
 with open(logfile, "w") as f:
     json.dump(log, f, indent=2)
 
-print(f"\n📝 Log saved to {logfile}")
+print(f"\n Log saved to {logfile}")
+
 
 
