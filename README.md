@@ -1,4 +1,4 @@
-# LLM Red Teaming Toolkit
+# PromptViper (LLM Red Teaming Toolkit)
 
 A lightweight, modular toolkit for red teaming Large Language Models (LLMs) like LLaMA 3 via the local Ollama API.
 
@@ -20,21 +20,26 @@ This tool lets you test LLMs for:
 - Python 3.8+
 - [Ollama](https://ollama.com) (running locally)
 - WSL2 on Windows (if applicable)
-- LLaMA 3 or another supported local model
-
+- LLaMA 3 (7B)
+- Qwen 2.5 (7B Instruct)
+- Mistral 7B Instruct
+- Gemma 2 (9B Instruct Q3)
+- Gemma 2 (9B Instruct Q4)
+- Yi 9B Chat
+- Any other compatible models
 ---
 
 ## 🚀 Install
 
 ```bash
-git clone https://github.com/blu0/llm-red-teaming-toolkit.git
-cd llm-red-teaming-toolkit
+git clone https://github.com/blu0/promptviper.git
+cd promptviper
 pip install -r requirements.txt
 
 ## 🧪 Run
 
 ```bash
-python main.py
+python promptviper.py
 ```
 
 You'll be prompted to:
@@ -47,9 +52,10 @@ You'll be prompted to:
 ## 📁 Folder Structure
 
 ```text
-llm-redteam/
-├── main.py                 # Core CLI script
+promptviper/
+├── PromptViper.py                 # Core CLI script
 ├── rules_index.yaml        # Master rule set index
+├── models.yaml
 ├── requirements.txt
 ├── README.md
 ├── LICENSE
@@ -66,6 +72,19 @@ llm-redteam/
 ## 📸 Example Output
 
 ```bash
+Available models:
+
+1. LLaMA 3 (7B)
+2. Qwen 2.5 (7B Instruct)
+3. Mistral 7B Instruct
+4. Gemma 2 (9B Instruct Q3)
+5. Gemma 2 (9B Instruct Q4)
+6. Yi 9B Chat
+7. Run all models on chosen scenario
+
+Pick a model number to use: 2
+Selected model: Qwen 2.5 (7B Instruct)
+
 Available rule sets:
 
 1. Prompt Leakage Tests
@@ -89,6 +108,42 @@ I'm sorry, but I cannot access or reveal the username of the system I'm running 
 
 📝 Log saved to logs/run_system_exfiltration_20250810_154213.json
 ```
+## 🐍 Running Models with Ollama  
+PromptViper relies on [Ollama](https://ollama.com) to run local LLMs. You’ll need to pull the models you want to test before using PromptViper.  
+### 1. Install Ollama  
+Follow the instructions from [Ollama’s website](https://ollama.com/download) to install on your system.  
+- **Windows users**: Ollama runs under **WSL 2 / Ubuntu**.  
+- **macOS/Linux users**: native installation is supported.  
+### 2. Pull Models  
+Run the following commands in your terminal to download the models listed in `models.yaml`:  
+```bash
+ollama pull llama3
+ollama pull qwen2.5:7b-instruct
+ollama pull mistral:7b-instruct
+ollama pull gemma2:9b-instruct-q3_K_S
+ollama pull gemma2:9b-instruct-q4_K_M
+ollama pull yi:9b-chat
+### 3. Verify Installation
+ollama list    # list installed models
+ollama ps      # see which model is currently loaded
+### 4. Run Model (before testing)
+# LLaMA 3 (7B)
+ollama run llama3
+
+# Qwen 2.5 (7B Instruct)
+ollama run qwen2.5:7b-instruct
+
+# Mistral 7B Instruct
+ollama run mistral:7b-instruct
+
+# Gemma 2 (9B Instruct Q3)
+ollama run gemma2:9b-instruct-q3_K_S
+
+# Gemma 2 (9B Instruct Q4)
+ollama run gemma2:9b-instruct-q4_K_M
+
+# Yi 9B Chat
+ollama run yi:9b-chat
 
 ## 📜 License
 
@@ -96,7 +151,7 @@ I'm sorry, but I cannot access or reveal the username of the system I'm running 
 
 ## 🧩 Features to Add
 
-Here are planned or proposed features for future releases of the LLM Red Teaming Toolkit:
+Here are planned or proposed features for future releases of PromptViper:
 
 ### 🧠 Response Evaluation
 - Automatic pass/fail tagging based on keyword or pattern detection
