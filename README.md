@@ -104,7 +104,7 @@ Available models:
 7. Qwen 2.5 (7B Instruct) - Alibaba
 8. Yi 9B Chat — 01.AI
 
-Pick a model number to use: 2
+Pick a model number to use: 7
 Selected model: Qwen 2.5 (7B Instruct)
 
 Available rule sets:
