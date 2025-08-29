@@ -117,20 +117,22 @@ Follow the instructions from [Ollama’s website](https://ollama.com/download) t
 ### 2. Pull Models  
 Run the following commands in your terminal to download the models listed in `models.yaml`:  
 ```bash
+
 ollama pull llama3
 ollama pull qwen2.5:7b-instruct
 ollama pull mistral:7b-instruct
 ollama pull gemma2:9b-instruct-q3_K_S
 ollama pull gemma2:9b-instruct-q4_K_M
 ollama pull yi:9b-chat
+
 ### 3. Verify Installation
 ollama list    # list installed models
 ollama ps      # see which model is currently loaded
 ### 4. Run Model (before testing)
-# LLaMA 3 (7B)
-ollama run llama3
 
-# Qwen 2.5 (7B Instruct)
+LLaMA 3 (7B)
+ollama run llama3
+Qwen 2.5 (7B Instruct)
 ollama run qwen2.5:7b-instruct
 
 # Mistral 7B Instruct
