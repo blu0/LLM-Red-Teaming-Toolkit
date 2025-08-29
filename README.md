@@ -214,7 +214,7 @@ Here are some proposed/possible features for future releases of PromptViper:
 
 ### 📦 Packaging & Distribution
 - Publish as pip package or Docker image
-- CLI install: `pip install llm-redteam`
+- CLI install: `pip install promptviper`
 
 ---
 
