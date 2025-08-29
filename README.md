@@ -26,7 +26,7 @@ This tool lets you test LLMs for:
 - [Ollama](https://ollama.com) (running locally)
 - WSL2 on Windows (if applicable)
 
-## Models
+## Models Currently Supported
 - LLaMA 3 (7B) — Meta
 - Gemma 2 (9B Instruct Q3) — Google DeepMind
 - Gemma 2 (9B Instruct Q4) — Google DeepMind
@@ -35,6 +35,16 @@ This tool lets you test LLMs for:
 - DeepSeek LLM (7B Chat) — DeepSeek AI
 - Qwen 2.5 (7B Instruct) — Alibaba
 - Yi 9B Chat — 01.AI
+
+## ⚙️ Custom Models
+PromptViper runs on top of Ollama. If you want to import your own fine-tuned model, follow the official [Ollama Modelfile guide](https://github.com/ollama/ollama/blob/main/docs/modelfile.md).
+
+In short, convert your weights to **GGUF**, create a `Modelfile`, then run:
+
+```bash
+ollama create my-model -f Modelfile
+```
+Finally, add `my-model` to `models.yaml` so PromptViper can use it.
 ---
 
 ## 🚀 Install
