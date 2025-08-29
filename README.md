@@ -64,6 +64,7 @@ python promptviper.py
 
 You'll be prompted to:
 
+- Select a model (e.g., LLaMA 3, DeepSeek LLM, etc. - *Ensure it is running!)
 - Select a rule set (e.g., Jailbreaks, Role Hijack, etc.)
 - Choose an individual test or run the full set
 - View model responses directly in terminal
